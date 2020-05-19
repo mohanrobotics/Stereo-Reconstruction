@@ -12,6 +12,7 @@ Please open the Reconstruction.pro files and edit the path to the OpenCV library
 
 * PCL
 * Open-cv 
+* QT 
 
 ## Project Tree
 ```
