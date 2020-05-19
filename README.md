@@ -28,7 +28,6 @@ Please open the Reconstruction.pro files and edit the path to the OpenCV library
     └── reconstruction.cpp
 ├── Reconstruction.pro
 ├── Reconstruction.pro.user
-
 ├── data
 │   ├── inputs
 │   │   ├── calibration_images
