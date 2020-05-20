@@ -1,4 +1,4 @@
-# Stereo-Reconstruction
+# Stereo Calibration and Reconstruction
 
 Stereo 3D Reconstruction using C++ and QT creator.
 
