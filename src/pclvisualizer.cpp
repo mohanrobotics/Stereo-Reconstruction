@@ -3,7 +3,7 @@
 pcl::PointCloud<pcl::PointXYZRGB>::Ptr PclVisualizer::CreatingPointCloud(const Mat &depth_img, const Mat &left_rect_1, const intrinsicCalibration &iC)
 
 {
-    const double camera_factor = 20000;
+    const double camera_factor = 200000;
     const double camera_cx = iC.M1 .at<double>(0,2);
     const double camera_cy = iC.M1 .at<double>(1,2);
     const double camera_fx = iC.M1 .at<double>(0,0);

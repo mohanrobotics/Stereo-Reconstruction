@@ -1,8 +1,8 @@
 #ifndef PCLVISUALIZER_H
 #define PCLVISUALIZER_H
 
-#include<Reconstruction/cameracalibration.h>
-#include<Reconstruction/depthestimation.h>
+#include "cameracalibration.h"
+#include "depthestimation.h"
 
 #include <pcl/visualization/cloud_viewer.h>
 #include <pcl/io/ply_io.h>

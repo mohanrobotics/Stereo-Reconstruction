@@ -9,7 +9,7 @@ RectifiedImages DepthEstimation::stereoRectification(const Mat &left_lower, cons
     Mat rmap[2][2];
    //Precompute maps for cv::remap()
     initUndistortRectifyMap(iC.M1, iC.D1, sC.R1, sC.P1, left_lower.size(), CV_16SC2, rmap[0][0], rmap[0][1]);
-    initUndistortRectifyMap(iC.M2, iC.D1, sC.R1, sC.P1, left_upper.size(), CV_16SC2, rmap[1][0], rmap[1][1]);
+    initUndistortRectifyMap(iC.M2, iC.D2, sC.R2, sC.P2, left_upper.size(), CV_16SC2, rmap[1][0], rmap[1][1]);
 
     RectifiedImages rectified;
     remap(left_lower, rectified.left_rect_lower, rmap[0][0], rmap[0][1], INTER_LINEAR);

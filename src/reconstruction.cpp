@@ -53,8 +53,8 @@ int main(int /* argc */, char ** /*argv*/)
 
         const RectifiedImages rectified_images =  DepthEstimation::stereoRectification(left_lower, left_upper, iC, sC);
         // -----------------------------------------
-
-
+        imwrite( packagePath + "/data/outputs/rectified/Phalaenopsis_Left_lower" + image_number + ".png", rectified_images.left_rect_lower);
+        imwrite( packagePath + "/data/outputs/rectified/Phalaenopsis_Left_upper" + image_number + ".png", rectified_images.left_rect_upper);
         // -- Finding the disparity in the images and saving
         // -----------------------------------------
 
